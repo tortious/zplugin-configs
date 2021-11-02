@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-sudo apt install --yes cmake redis-server libhiredis-dev
+sudo DEBIAN_FRONTEND=noninteractive apt install --yes cmake redis-server libhiredis-dev \
+                        tree gem libfreetype6-dev libfontconfig-dev \
+                        autoconf automake nodejs npm
 
 # For zdharma/zredis
 sudo mkdir -p usr/local/var/db/redis
